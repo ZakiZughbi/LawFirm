@@ -5,6 +5,16 @@
 }
 
 /* Base Template */
-
+nav a{
+    color: black;
+    text-decoration: none;
+}
 
 /* Home */
+
+
+/* Move later */
+img{
+    width: 100%;
+}
+/*---------------------*/
