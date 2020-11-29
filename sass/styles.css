@@ -45,6 +45,30 @@ nav .menu ul li:hover a {
   color: #FFFFFF;
 }
 
+.header-container1 h1 {
+  font-size: 90px;
+  font-family: "Lato", sans-serif;
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 1;
+  left: 24%;
+  top: 270px;
+}
+.header-container1 h1:nth-child(2) {
+  color: #5A9FB5;
+  left: 27%;
+  top: 160px;
+}
+.header-container1 h2 {
+  font-size: 75px;
+  font-family: "Lato", sans-serif;
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 1;
+  left: 18%;
+  top: 450px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -53,6 +77,10 @@ nav .menu ul li:hover a {
 
 img {
   width: 100%;
+}
+
+.header img {
+  position: relative;
 }
 
 /*# sourceMappingURL=styles.css.map */
