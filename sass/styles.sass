@@ -214,24 +214,28 @@ img
     height: 700px
     background-image: url("./Assets/footer-city(original).jpg")
     position: relative
-    .footerContainer
+    .imgContainer
         position: fixed
         color: black
         bottom: -4px
         z-index: -1
-        h1
-            position: absolute
-            font-size: 80px
-            font-family: $modFont
-            color: $primeWhite
-            top: 35%
-            left: 5%
-        .footerLinks
-            display: flex
-            justify-content: space-evenly
-            position: absolute
-            bottom: 50px
-            width: 100%
+    h1
+        position: absolute
+        font-size: 80px
+        font-family: $modFont
+        color: $primeWhite
+        top: 20%
+        left: 5%
+    .footerLinks
+        display: flex
+        justify-content: space-evenly
+        position: absolute
+        bottom: 50px
+        width: 100%
+        li
+            display: table-cell
+            position: relative
+            padding: 15px 0
             a
                 text-decoration: none
                 color: $primeWhite
@@ -239,3 +243,17 @@ img
                 font-family: $modFont
                 &:hover
                     color: $primeGray
+                &:after
+                    background: none repeat scroll 0 0 transparent
+                    bottom: 0
+                    content: ""
+                    display: block
+                    height: 2px
+                    left: 50%
+                    position: absolute
+                    background: $primeGray
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s
+                    width: 0
+                &:hover:after
+                    width: 100%
+                    left: 0

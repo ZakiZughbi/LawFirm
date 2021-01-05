@@ -333,35 +333,56 @@ img {
   background-image: url("./Assets/footer-city(original).jpg");
   position: relative;
 }
-.footer .footerContainer {
+.footer .imgContainer {
   position: fixed;
   color: black;
   bottom: -4px;
   z-index: -1;
 }
-.footer .footerContainer h1 {
+.footer h1 {
   position: absolute;
   font-size: 80px;
   font-family: "Lato", sans-serif;
   color: #F0F0ED;
-  top: 35%;
+  top: 20%;
   left: 5%;
 }
-.footer .footerContainer .footerLinks {
+.footer .footerLinks {
   display: flex;
   justify-content: space-evenly;
   position: absolute;
   bottom: 50px;
   width: 100%;
 }
-.footer .footerContainer .footerLinks a {
+.footer .footerLinks li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+.footer .footerLinks li a {
   text-decoration: none;
   color: #F0F0ED;
   font-size: 40px;
   font-family: "Lato", sans-serif;
 }
-.footer .footerContainer .footerLinks a:hover {
+.footer .footerLinks li a:hover {
   color: #B9AFAF;
+}
+.footer .footerLinks li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #B9AFAF;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.footer .footerLinks li a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
