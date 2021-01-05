@@ -1,2 +1,38 @@
 $primeBlue: #5A9FB5
 $primeWhite: #F0F0ED
+$prueWhite: #FFFFFF
+$primeGray: #B9AFAF
+
+$classFont: Lora
+$modFont: 'Lato', sans-serif
+$pSize: 30px
+
+$homeContMar: 6%
+
+@mixin btn($theme)
+    @if $theme == $primeWhite
+        border: 2px solid $primeBlue
+        font-size: 25px
+        font-family: $modFont
+        color: $primeBlue
+        text-decoration: none
+        padding: 5%
+        padding-top: 1%
+        padding-bottom: 1%
+        transition: color, background-color 0.4s
+        &:hover
+            background-color: darken($primeWhite, 7)
+            color: darken($primeBlue, 7)
+    @else
+        border: 2px solid $primeWhite
+        font-size: 25px
+        font-family: $modFont
+        color: $primeWhite
+        text-decoration: none
+        padding: 5%
+        padding-top: 1%
+        padding-bottom: 1%
+        transition: color, background-color 0.4s
+        &:hover
+            background-color: darken($primeBlue, 7)
+            color: darken($primeWhite, 7)

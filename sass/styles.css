@@ -39,10 +39,13 @@ nav .menu ul li {
 nav .menu ul li:hover {
   background-color: #54C2E5;
   color: #FFFFFF;
+  transition: background-color 0.7s;
 }
 nav .menu ul li:hover a {
   background-color: #54C2E5;
   color: #FFFFFF;
+  transition: color 0.7s;
+  transition: background-color 3s;
 }
 
 .header-container1 h1 {
@@ -52,18 +55,27 @@ nav .menu ul li:hover a {
   z-index: 1;
   display: flex;
   justify-content: center;
+  position: absolute;
+  left: 25%;
+  top: 310px;
+  text-shadow: 1px 1px 5px #707070;
 }
 .header-container1 h1:nth-child(2) {
   color: #5A9FB5;
+  top: 200px;
+  left: 28%;
+  text-shadow: none;
 }
 .header-container1 h2 {
   font-size: 75px;
-  font-family: "Lato", sans-serif;
+  font-family: Lora;
+  font-weight: 500;
   color: #FFFFFF;
   position: absolute;
   z-index: 1;
   left: 18%;
-  top: 450px;
+  top: 470px;
+  text-shadow: 1px 1px 5px black;
 }
 
 * {
@@ -78,6 +90,281 @@ img {
 
 .header img {
   position: relative;
+}
+
+.phone-number {
+  background-color: #5A9FB5;
+  color: #F0F0ED;
+  margin-top: -4px;
+  padding: 2%;
+  text-align: center;
+}
+.phone-number h2 {
+  display: inline;
+  font-family: Lora;
+  font-weight: 400;
+  font-size: 40px;
+}
+.phone-number h2:nth-child(2) {
+  font-family: "Lato", sans-serif;
+  margin-left: 10%;
+}
+
+.about {
+  background-color: #F0F0ED;
+  padding: 10%;
+  text-align: center;
+}
+.about p {
+  font-size: 30px;
+  color: #5A9FB5;
+  padding: 8%;
+  margin-bottom: 6%;
+  font-family: Lora;
+}
+.about a {
+  border: 2px solid #5A9FB5;
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  color: #5A9FB5;
+  text-decoration: none;
+  padding: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  transition: color, background-color 0.4s;
+}
+.about a:hover {
+  background-color: #e0e0da;
+  color: #498da2;
+}
+
+.practice {
+  background-color: #F0F0ED;
+  padding: 10%;
+  text-align: center;
+}
+.practice p {
+  font-size: 30px;
+  color: #5A9FB5;
+  padding: 8%;
+  margin-bottom: 6%;
+  font-family: Lora;
+}
+.practice a {
+  border: 2px solid #5A9FB5;
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  color: #5A9FB5;
+  text-decoration: none;
+  padding: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  transition: color, background-color 0.4s;
+}
+.practice a:hover {
+  background-color: #e0e0da;
+  color: #498da2;
+}
+
+.window {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  margin: 0;
+}
+.window h2 {
+  position: absolute;
+  font-size: 60px;
+  font-family: Lora;
+  color: #5A9FB5;
+  top: 47%;
+  left: 19%;
+}
+.attorneys {
+  background-color: #5A9FB5;
+  padding: 10%;
+  text-align: center;
+}
+.attorneys p {
+  font-size: 30px;
+  color: #F0F0ED;
+  padding: 8%;
+  margin-bottom: 6%;
+  margin-top: 10%;
+  font-family: Lora;
+}
+.attorneys a {
+  border: 2px solid #F0F0ED;
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  color: #F0F0ED;
+  text-decoration: none;
+  padding: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  transition: color, background-color 0.4s;
+}
+.attorneys a:hover {
+  background-color: #498da2;
+  color: #e0e0da;
+}
+.attorneys div {
+  margin-bottom: 4%;
+}
+
+.location {
+  background-color: #F0F0ED;
+  color: #5A9FB5;
+  padding: 3%;
+}
+.location h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin-left: 5%;
+  font-size: 60px;
+}
+.location p {
+  font-size: 30px;
+  font-family: Lora;
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 5%;
+}
+.location iframe {
+  margin-left: 5%;
+  margin-top: 7%;
+}
+
+.contacts {
+  background-color: #5A9FB5;
+  padding: 3%;
+  color: #F0F0ED;
+  position: relative;
+  height: 730px;
+}
+.contacts h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin-left: 5%;
+  font-size: 60px;
+  margin-bottom: 6%;
+}
+.contacts .contactstxt {
+  font-family: Lora;
+}
+.contacts .contactstxt p {
+  font-size: 35px;
+  color: #F0F0ED;
+  margin-left: 5%;
+  margin-bottom: 6%;
+}
+.contacts .contactstxt p:nth-child(2) {
+  width: 30%;
+  font-size: 27px;
+}
+.contacts .form-container {
+  position: absolute;
+  top: 170px;
+  left: 60%;
+}
+.contacts .form-container ::placeholder {
+  color: #B9AFAF;
+}
+.contacts .form-container input {
+  font-size: 25px;
+  display: block;
+  margin: 20px;
+  width: 120%;
+  padding: 7px;
+  border: none;
+}
+.contacts .form-container input:nth-child(3) {
+  padding-bottom: 100px;
+}
+.contacts .form-container button {
+  border: 2px solid #F0F0ED;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  color: #5A9FB5;
+  background-color: #F0F0ED;
+  padding: 25px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  position: absolute;
+  right: -85px;
+}
+.contacts .form-container button:hover {
+  border: 2px solid #F0F0ED;
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  color: #F0F0ED;
+  text-decoration: none;
+  padding: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  transition: color, background-color 0.4s;
+}
+.contacts .form-container button:hover:hover {
+  background-color: #498da2;
+  color: #e0e0da;
+}
+.contacts a {
+  border: 2px solid #F0F0ED;
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  color: #F0F0ED;
+  text-decoration: none;
+  padding: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  transition: color, background-color 0.4s;
+  position: absolute;
+  left: 40%;
+  bottom: 80px;
+}
+.contacts a:hover {
+  background-color: #498da2;
+  color: #e0e0da;
+}
+
+.footer {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  margin: 0;
+}
+.footer .footerContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.footer .footerContainer h1 {
+  position: absolute;
+  font-size: 80px;
+  font-family: "Lato", sans-serif;
+  color: #F0F0ED;
+  top: 20%;
+  left: 5%;
+}
+.footer .footerContainer .footerLinks {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+}
+.footer .footerContainer .footerLinks a {
+  text-decoration: none;
+  color: #F0F0ED;
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+}
+.footer .footerContainer .footerLinks a:hover {
+  color: #B9AFAF;
+}
+.footer .footerContainer img {
+  bottom: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

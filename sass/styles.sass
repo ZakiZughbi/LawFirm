@@ -14,3 +14,197 @@ img
 .header
     img
         position: relative
+
+// Home Page Content
+.phone-number
+    background-color: $primeBlue
+    color: $primeWhite
+    margin-top: -4px
+    padding: 2%
+    text-align: center
+    h2
+        display: inline
+        font-family: $classFont
+        font-weight: 400
+        font-size: 40px
+
+        &:nth-child(2)
+            font-family: $modFont
+            margin-left: 10%
+// About
+.about
+    background-color: $primeWhite
+    padding: 10%
+    text-align: center
+    p
+        font-size: $pSize
+        color: $primeBlue
+        padding: 8%
+        margin-bottom: 6%
+        font-family: $classFont
+    a
+        @include btn($primeWhite)
+// Practice Area
+.practice
+    background-color: $primeWhite
+    padding: 10%
+    text-align: center
+    p
+        font-size: $pSize
+        color: $primeBlue
+        padding: 8%
+        margin-bottom: 6%
+        font-family: $classFont
+    a
+        @include btn($primeWhite)
+
+// Slogan Window
+
+.window
+    width: 100%
+    height: 550px
+    position: relative
+    margin: 0
+
+    h2
+        position: absolute
+        font-size: 60px
+        font-family: $classFont
+        color: $primeBlue
+        top: 47%
+        left: 19%
+    img
+        // position: fixed
+        // top: 0
+        // left: 0
+        // z-index: -1
+
+// Attorneys
+
+.attorneys
+    background-color: $primeBlue
+    padding: 10%
+    text-align: center
+    p
+        font-size: $pSize
+        color: $primeWhite
+        padding: 8%
+        margin-bottom: 6%
+        margin-top: 10%
+        font-family: $classFont
+    a
+        @include btn($primeBlue)
+    div
+        margin-bottom: 4%
+// Location
+
+.location
+    background-color: $primeWhite
+    color: $primeBlue
+    padding: 3%
+    h2
+        font-family: $modFont
+        font-weight: 400
+        margin-left: 5%
+        font-size: 60px
+
+    p
+        font-size: $pSize
+        font-family: $classFont
+        text-align: center
+        margin-left: 40%
+        margin-right: 5%
+    iframe
+        margin-left: 5%
+        margin-top: 7%
+
+// Contacts
+.contacts
+    background-color: $primeBlue
+    padding: 3%
+    color: $primeWhite
+    position: relative
+    height: 730px
+    h2
+        font-family: $modFont
+        font-weight: 400
+        margin-left: 5%
+        font-size: 60px
+        margin-bottom: $homeContMar
+    .contactstxt
+        font-family: $classFont
+        p
+            font-size: 35px
+            color: $primeWhite
+            margin-left: 5%
+            margin-bottom: $homeContMar
+            &:nth-child(2)
+                width: 30%
+                font-size: 27px
+    .form-container
+        position: absolute
+        top: 170px
+        left: 60%
+        ::placeholder
+            color: $primeGray
+        input
+            font-size: 25px
+            display: block
+            margin: 20px
+            width: 120%
+            padding: 7px
+            border: none
+            &:nth-child(3)
+                padding-bottom: 100px
+        button
+            border: 2px solid $primeWhite
+            font-size: 15px
+            font-family: $modFont
+            color: $primeBlue
+            background-color: $primeWhite
+            padding: 25px
+            padding-top: 7px
+            padding-bottom: 7px
+            position: absolute
+            right: -85px
+            &:hover
+                @include btn($primeBlue)
+    a
+        @include btn($primeBlue)
+        position: absolute
+        left: 40%
+        bottom: 80px
+
+// Footer
+.footer
+    width: 100%
+    height: 700px
+    position: relative
+    margin: 0
+    .footerContainer
+        position: fixed
+        top: 0
+        left: 0
+        z-index: -1
+        h1
+            position: absolute
+            font-size: 80px
+            font-family: $modFont
+            color: $primeWhite
+            top: 20%
+            left: 5%
+        .footerLinks
+            display: flex
+            justify-content: space-evenly
+            position: absolute
+            bottom: 50px
+            width: 100%
+            a
+                text-decoration: none
+                color: $primeWhite
+                font-size: 40px
+                font-family: $modFont
+                &:hover
+                    color: $primeGray
+        img
+            bottom: 0

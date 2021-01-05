@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="./sass/styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lato:wght@300&display=swap" rel="stylesheet">
         <title>Home</title>
     </head>
@@ -50,7 +51,7 @@
             <p>Our firm has many practices areas in which we worked and won multiple cases, such as: Family Law, Civil Rights Law,  Immigration Law, Bankruptcy Law ect.</p>
             <a href="#">Practice Area</a>
         </div>
-        <!-- Slogan -->
+        <!-- Slogan Window -->
         <div class="window">
             <h2>“Legal Insight. Business Instinct”</h2>
             <img src="./Assets/city-sky.jpg" alt="city sky">
@@ -59,27 +60,27 @@
         <div class="attorneys">
             <p>We have a number of attorneys ready to work any case depending on the area of your residence. In New York we have John Doe, who is our top lawyer since 2018…</p>
             <a href="#">Attorneys</a>
+            <div></div>
         </div>
         <!-- Location -->
         <div class="location">
             <h2>Locations</h2>
             <p>We are located around the nation. Concord, NCY, Wayne, Tampa, and San Francisco.</p>
-            <img src="" alt="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12420.601524132726!2d-77.0365298!3d38.8976763!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x715969d86d0b76bf!2sThe%20White%20House!5e0!3m2!1sen!2sus!4v1609800080208!5m2!1sen!2sus" width="90%" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
         <!-- Contacts -->
         <div class="contacts">
             <h2>Contacts</h2>
-            <h3>Phone: 917-556-7821</h3>
-            <p>Please feel free to send an email, we hope to be working with you soon.</p>
+            <div class="contactstxt">
+                <p>Phone: 917-556-7821</p>
+                <p>Please feel free to send an email, we hope to be working with you soon.</p>
+            </div>
             <div class="form-container">
                 <form class="form" action="i" method="post">
-                    <label for="name">Name: </label>
-                    <input type="text" name="name" value="John Doe">
-                    <label for="email">Email: </label>
-                    <input type="text" name="email" value="john.doe@email.com">
-                    <label for="message">Messsage: </label>
-                    <input type="text" name="message" value="Message">
-                    <button type="button" name="button">Submit</button>
+                    <input type="text" name="name" placeholder="John Doe">
+                    <input type="text" name="email" placeholder="john.doe@email.com">
+                    <input type="text" name="message" placeholder="Message">
+                    <button class="submitBtn" type="button" name="button">Submit</button>
                 </form>
             </div>
             <a href="#">Contacts</a>
@@ -87,10 +88,14 @@
 
 <!-- Footer Menu -->
         <div class="footer">
-            <img src="./Assets/footer-city.jpg" alt="footer-img">
-            <h1>Law Firm</h1>
-            <a href="#">Contacts</a>
-            <a href="#">Services</a>
-            <a href="#">Location</a>
+            <div class="footerContainer">
+                <h1>Law Firm</h1>
+                <div class="footerLinks">
+                    <a href="#">Contacts</a>
+                    <a href="#">Services</a>
+                    <a href="https://www.geeksforgeeks.org/what-is-the-difference-between-scss-and-sass/#:~:text=What%20is%20the%20difference%20between%20SCSS%20and%20SASS%20%3F,-Last%20Updated%20%3A%2016&text=SASS%20(Syntactically%20Awesome%20Style%20Sheets,of%20the%20existing%20CSS%20syntax.">Location</a>
+                </div>
+                <img src="./Assets/footer-city(original).jpg" alt="footer-img">
+            </div>
         </div>
 </html>
