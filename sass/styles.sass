@@ -6,58 +6,36 @@
 
 // Clearing Page
 *
-        margin: 0
-        padding: 0
-        box-sizing: border-box
+    margin: 0
+    padding: 0
+    box-sizing: border-box
 
 // All images
 img
-        width: 100%
+    width: 100%
 
 // Home Page Content
 .phone-number
     background-color: $primeBlue
     color: $primeWhite
     margin-top: -4px
-    padding: 2%
+    padding: 1%
     text-align: center
     h2
         display: inline
-        font-family: $classFont
+        font-family: $modFont
         font-weight: 400
-        font-size: 40px
-
+        font-size: 30px
         &:nth-child(2)
-            font-family: $modFont
-            margin-left: 10%
+            margin-left: 5%
 
 // About
 .about
-    background-color: $primeWhite
-    padding: 10%
-    text-align: center
-    p
-        font-size: $pSize
-        color: $primeBlue
-        padding: 8%
-        margin-bottom: 6%
-        font-family: $classFont
-    a
-        @include btn($primeWhite)
+    @include section($primeWhite)
 
 // Practice Area
 .practice
-    background-color: $primeWhite
-    padding: 10%
-    text-align: center
-    p
-        font-size: $pSize
-        color: $primeBlue
-        padding: 8%
-        margin-bottom: 6%
-        font-family: $classFont
-    a
-        @include btn($primeWhite)
+    @include section($primeWhite)
     div
         margin-bottom: 10%
 
@@ -66,37 +44,22 @@ img
     width: 100%
     height: 550px
     position: relative
-    margin: 0
-
     h2
         position: absolute
         font-size: 60px
         font-family: $classFont
         color: $primeBlue
         top: 47%
-        left: 19%
-
+        left: 24%
     img
         position: fixed
         top: 0
         left: 0
         z-index: -1
-        visibility: hidden
 
 // Attorneys
 .attorneys
-    background-color: $primeBlue
-    padding: 10%
-    text-align: center
-    p
-        font-size: $pSize
-        color: $primeWhite
-        padding: 8%
-        margin-bottom: 6%
-        margin-top: 11%
-        font-family: $classFont
-    a
-        @include btn($primeBlue)
+    @include section($primeBlue)
     div
         margin-bottom: 6%
 
@@ -105,21 +68,19 @@ img
     background-color: $primeWhite
     color: $primeBlue
     padding: 3%
-    h2
+    p
         font-family: $modFont
-        font-weight: 400
         margin-left: 5%
         font-size: 60px
-
-    p
-        font-size: $pSize
-        font-family: $classFont
-        text-align: center
-        margin-left: 40%
-        margin-right: 5%
+        &:nth-child(2)
+            font-size: 20px
+            font-family: $classFont
+            text-align: left
+            padding: 10px
+            margin-left: 4.5%
+            width: 40%
     iframe
-        margin-left: 5%
-        margin-top: 3%
+        margin: 3% 0 0 5%
 
 // Contacts
 .contacts
@@ -128,22 +89,21 @@ img
     color: $primeWhite
     position: relative
     height: 730px
-    h2
+    p
         font-family: $modFont
-        font-weight: 400
-        margin-left: 5%
+        margin: 0 0 6% 5%
         font-size: 60px
-        margin-bottom: $homeContMar
     .contactstxt
-        font-family: $classFont
+        font-family: $modFont
         p
             font-size: 30px
             color: $primeWhite
-            margin-left: 5%
-            margin-bottom: $homeContMar
+            margin: 0 0 6% 5%
             &:nth-child(2)
                 width: 23%
                 font-size: 20px
+                font-family: $classFont
+
     .form-container
         position: absolute
         top: 170px
@@ -153,16 +113,16 @@ img
         input
             font-size: 20px
             display: block
-            margin: 20px
             width: 76%
+            margin: 20px
             padding: 7px
             border: none
         textarea
             font-size: 20px
             font-family: 'Helvetica'
             display: block
-            margin: 20px
             width: 76%
+            margin: 20px
             padding: 7px
             border: none
         button
@@ -171,16 +131,13 @@ img
             font-family: $modFont
             color: $primeWhite
             background-color: $primeBlue
-            padding: 25px
-            padding-top: 7px
-            padding-bottom: 7px
+            padding: 7px 25px 7px
             position: absolute
             right: 110px
             transition: color, background-color 0.4s
             &:hover
                 background-color: darken($primeBlue, 7)
                 color: darken($primeWhite, 7)
-
 
     a
         @include btn($primeBlue)

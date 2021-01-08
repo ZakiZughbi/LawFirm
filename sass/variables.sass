@@ -1,15 +1,40 @@
+// Variables
+// Colors
 $primeBlue: #5A9FB5
 $primeWhite: #F0F0ED
 $prueWhite: #FFFFFF
 $primeGray: #B9AFAF
 
-$classFont: Lora
+// Fonts
+$classFont: 'Cormorant Garamond', serif
 $modFont: 'Lato', sans-serif
-$pSize: 28px
+$pSize: 30px
 
-$homeContMar: 6%
+//Mixins
+// Basic Section Mixin
+@mixin section($theme)
+    padding: 10%
+    text-align: center
+    p
+        font-size: $pSize
+        padding: 8%
+        margin-bottom: 6%
+        font-family: $classFont
+    @if $theme == $primeWhite
+        background-color: $primeWhite
+        p
+            color: $primeBlue
+        a
+            @include btn($primeWhite)
+    @else
+        background-color: $primeBlue
+        p
+            color: $primeWhite
+        a
+            @include btn($primeBlue)
 
-// build btn (fontsize, padding ect) then if for colors
+// Button Mixin
+//    build btn (fontsize, padding ect) then "if" for colors
 @mixin btn($theme)
     @if $theme == $primeWhite
         border: 2px solid $primeBlue
@@ -17,9 +42,7 @@ $homeContMar: 6%
         font-family: $modFont
         color: $primeBlue
         text-decoration: none
-        padding: 6%
-        padding-top: 1.3%
-        padding-bottom: 1.3%
+        padding: 1.3% 6% 1.3%
         transition: color, background-color 0.5s
         &:hover
             background-color: darken($primeWhite, 7)
@@ -30,9 +53,7 @@ $homeContMar: 6%
         font-family: $modFont
         color: $primeWhite
         text-decoration: none
-        padding: 6%
-        padding-top: 1.3%
-        padding-bottom: 1.3%
+        padding: 1.3% 6% 1.3%
         transition: color, background-color 0.5s
         &:hover
             background-color: darken($primeBlue, 7)
