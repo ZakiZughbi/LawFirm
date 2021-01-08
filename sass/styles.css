@@ -1,0 +1,384 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #707070;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+
+#logo {
+  min-width: 30%;
+  margin-left: 10%;
+  align-self: center;
+  font-size: 25px;
+}
+
+.menu {
+  flex-grow: 1;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  margin-right: 10%;
+  font-size: 16px;
+}
+.menu ul li {
+  list-style: none;
+  height: 75px;
+  padding: 27px 10px 0;
+}
+.menu ul li:hover {
+  background-color: #54C2E5;
+  color: #FFFFFF;
+  transition: background-color 0.7s;
+}
+.menu ul li:hover a {
+  background-color: #54C2E5;
+  color: #FFFFFF;
+  transition: background-color 3s;
+}
+
+.header img {
+  position: relative;
+}
+
+.header-container1 h1 {
+  font-size: 90px;
+  font-family: "Cormorant Garamond", serif;
+  color: #FFFFFF;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 25%;
+  top: 310px;
+  text-shadow: 1px 1px 5px #707070;
+}
+.header-container1 h1:nth-child(2) {
+  color: #5A9FB5;
+  top: 200px;
+  left: 28%;
+  text-shadow: none;
+}
+.header-container1 h2 {
+  font-size: 75px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 1;
+  left: 18%;
+  top: 470px;
+  text-shadow: 1px 1px 5px black;
+}
+
+.footer {
+  width: 100%;
+  height: 700px;
+  background-image: url("./Assets/footer-city(original).jpg");
+  position: relative;
+}
+.footer .imgContainer {
+  position: fixed;
+  color: black;
+  bottom: -4px;
+  z-index: -2;
+}
+.footer h1 {
+  position: absolute;
+  font-size: 80px;
+  font-family: "Lato", sans-serif;
+  color: #F0F0ED;
+  top: 20%;
+  left: 5%;
+}
+.footer .footerLinks {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+}
+.footer .footerLinks li {
+  display: table-cell;
+  position: relative;
+  padding: 15px;
+}
+.footer .footerLinks li a {
+  text-decoration: none;
+  color: #F0F0ED;
+  font-size: 35px;
+  font-family: "Lato", sans-serif;
+  transition: color 0.3s linear;
+}
+.footer .footerLinks li a:hover {
+  color: #B9AFAF;
+}
+.footer .footerLinks li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #B9AFAF;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.footer .footerLinks li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.phone-number {
+  background-color: #5A9FB5;
+  color: #F0F0ED;
+  margin-top: -4px;
+  padding: 1%;
+  text-align: center;
+}
+.phone-number h2 {
+  display: inline;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+.phone-number h2:nth-child(2) {
+  margin-left: 5%;
+}
+
+.about {
+  padding: 10%;
+  text-align: center;
+  background-color: #F0F0ED;
+}
+.about p {
+  font-size: 30px;
+  padding: 8%;
+  margin-bottom: 6%;
+  font-family: "Cormorant Garamond", serif;
+}
+.about p {
+  color: #5A9FB5;
+}
+.about a {
+  border: 2px solid #5A9FB5;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  color: #5A9FB5;
+  text-decoration: none;
+  padding: 1.3% 6% 1.3%;
+  transition: color, background-color 0.5s;
+}
+.about a:hover {
+  background-color: #e0e0da;
+  color: #498da2;
+}
+
+.practice {
+  padding: 10%;
+  text-align: center;
+  background-color: #F0F0ED;
+}
+.practice p {
+  font-size: 30px;
+  padding: 8%;
+  margin-bottom: 6%;
+  font-family: "Cormorant Garamond", serif;
+}
+.practice p {
+  color: #5A9FB5;
+}
+.practice a {
+  border: 2px solid #5A9FB5;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  color: #5A9FB5;
+  text-decoration: none;
+  padding: 1.3% 6% 1.3%;
+  transition: color, background-color 0.5s;
+}
+.practice a:hover {
+  background-color: #e0e0da;
+  color: #498da2;
+}
+.practice div {
+  margin-bottom: 10%;
+}
+
+.window {
+  width: 100%;
+  height: 550px;
+  position: relative;
+}
+.window h2 {
+  position: absolute;
+  font-size: 60px;
+  font-family: "Cormorant Garamond", serif;
+  color: #5A9FB5;
+  top: 47%;
+  left: 24%;
+}
+.window img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.attorneys {
+  padding: 10%;
+  text-align: center;
+  background-color: #5A9FB5;
+}
+.attorneys p {
+  font-size: 30px;
+  padding: 8%;
+  margin-bottom: 6%;
+  font-family: "Cormorant Garamond", serif;
+}
+.attorneys p {
+  color: #F0F0ED;
+}
+.attorneys a {
+  border: 2px solid #F0F0ED;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  color: #F0F0ED;
+  text-decoration: none;
+  padding: 1.3% 6% 1.3%;
+  transition: color, background-color 0.5s;
+}
+.attorneys a:hover {
+  background-color: #498da2;
+  color: #e0e0da;
+}
+.attorneys div {
+  margin-bottom: 6%;
+}
+
+.location {
+  background-color: #F0F0ED;
+  color: #5A9FB5;
+  padding: 3%;
+}
+.location p {
+  font-family: "Lato", sans-serif;
+  margin-left: 5%;
+  font-size: 60px;
+}
+.location p:nth-child(2) {
+  font-size: 20px;
+  font-family: "Cormorant Garamond", serif;
+  text-align: left;
+  padding: 10px;
+  margin-left: 4.5%;
+  width: 40%;
+}
+.location iframe {
+  margin: 3% 0 0 5%;
+}
+
+.contacts {
+  background-color: #5A9FB5;
+  padding: 3%;
+  color: #F0F0ED;
+  position: relative;
+  height: 730px;
+}
+.contacts p {
+  font-family: "Lato", sans-serif;
+  margin: 0 0 6% 5%;
+  font-size: 60px;
+}
+.contacts .contactstxt {
+  font-family: "Lato", sans-serif;
+}
+.contacts .contactstxt p {
+  font-size: 30px;
+  color: #F0F0ED;
+  margin: 0 0 6% 5%;
+}
+.contacts .contactstxt p:nth-child(2) {
+  width: 23%;
+  font-size: 20px;
+  font-family: "Cormorant Garamond", serif;
+}
+.contacts .form-container {
+  position: absolute;
+  top: 170px;
+  left: 61%;
+}
+.contacts .form-container ::placeholder {
+  color: #B9AFAF;
+}
+.contacts .form-container input {
+  font-size: 20px;
+  display: block;
+  width: 76%;
+  margin: 20px;
+  padding: 7px;
+  border: none;
+}
+.contacts .form-container textarea {
+  font-size: 20px;
+  font-family: "Helvetica";
+  display: block;
+  width: 76%;
+  margin: 20px;
+  padding: 7px;
+  border: none;
+}
+.contacts .form-container button {
+  border: 2px solid #F0F0ED;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  color: #F0F0ED;
+  background-color: #5A9FB5;
+  padding: 7px 25px 7px;
+  position: absolute;
+  right: 110px;
+  transition: color, background-color 0.4s;
+}
+.contacts .form-container button:hover {
+  background-color: #498da2;
+  color: #e0e0da;
+}
+.contacts a {
+  border: 2px solid #F0F0ED;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  color: #F0F0ED;
+  text-decoration: none;
+  padding: 1.3% 6% 1.3%;
+  transition: color, background-color 0.5s;
+  position: absolute;
+  left: 40%;
+  bottom: 80px;
+}
+.contacts a:hover {
+  background-color: #498da2;
+  color: #e0e0da;
+}
+
+/*# sourceMappingURL=styles.css.map */

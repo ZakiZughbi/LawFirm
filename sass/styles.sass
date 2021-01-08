@@ -1,0 +1,146 @@
+// File Imports
+@import './variables'
+@import './nav'
+@import './header'
+@import './footer'
+
+// Clearing Page
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+// All images
+img
+    width: 100%
+
+// Home Page Content
+.phone-number
+    background-color: $primeBlue
+    color: $primeWhite
+    margin-top: -4px
+    padding: 1%
+    text-align: center
+    h2
+        display: inline
+        font-family: $modFont
+        font-weight: 400
+        font-size: 30px
+        &:nth-child(2)
+            margin-left: 5%
+
+// About
+.about
+    @include section($primeWhite)
+
+// Practice Area
+.practice
+    @include section($primeWhite)
+    div
+        margin-bottom: 10%
+
+// Slogan Window
+.window
+    width: 100%
+    height: 550px
+    position: relative
+    h2
+        position: absolute
+        font-size: 60px
+        font-family: $classFont
+        color: $primeBlue
+        top: 47%
+        left: 24%
+    img
+        position: fixed
+        top: 0
+        left: 0
+        z-index: -1
+
+// Attorneys
+.attorneys
+    @include section($primeBlue)
+    div
+        margin-bottom: 6%
+
+// Location
+.location
+    background-color: $primeWhite
+    color: $primeBlue
+    padding: 3%
+    p
+        font-family: $modFont
+        margin-left: 5%
+        font-size: 60px
+        &:nth-child(2)
+            font-size: 20px
+            font-family: $classFont
+            text-align: left
+            padding: 10px
+            margin-left: 4.5%
+            width: 40%
+    iframe
+        margin: 3% 0 0 5%
+
+// Contacts
+.contacts
+    background-color: $primeBlue
+    padding: 3%
+    color: $primeWhite
+    position: relative
+    height: 730px
+    p
+        font-family: $modFont
+        margin: 0 0 6% 5%
+        font-size: 60px
+    .contactstxt
+        font-family: $modFont
+        p
+            font-size: 30px
+            color: $primeWhite
+            margin: 0 0 6% 5%
+            &:nth-child(2)
+                width: 23%
+                font-size: 20px
+                font-family: $classFont
+
+    .form-container
+        position: absolute
+        top: 170px
+        left: 61%
+        ::placeholder
+            color: $primeGray
+        input
+            font-size: 20px
+            display: block
+            width: 76%
+            margin: 20px
+            padding: 7px
+            border: none
+        textarea
+            font-size: 20px
+            font-family: 'Helvetica'
+            display: block
+            width: 76%
+            margin: 20px
+            padding: 7px
+            border: none
+        button
+            border: 2px solid $primeWhite
+            font-size: 15px
+            font-family: $modFont
+            color: $primeWhite
+            background-color: $primeBlue
+            padding: 7px 25px 7px
+            position: absolute
+            right: 110px
+            transition: color, background-color 0.4s
+            &:hover
+                background-color: darken($primeBlue, 7)
+                color: darken($primeWhite, 7)
+
+    a
+        @include btn($primeBlue)
+        position: absolute
+        left: 40%
+        bottom: 80px
