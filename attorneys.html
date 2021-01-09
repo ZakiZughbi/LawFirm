@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./sass/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lato:wght@300&display=swap" rel="stylesheet">
         <title>Attorneys</title>
     </head>
@@ -10,7 +10,7 @@
 <!-- Nav Bar -->
         <div class="nav-container">
             <nav>
-                <div class="logo">
+                <div id="logo">
                     <a href="#">Law Firm</a>
                 </div>
                 <div class="menu">
@@ -28,7 +28,9 @@
 
 <!-- Heading Wrapper -->
         <div class="header header-container2">
-            <img src="./Assets/suit.jpg" alt="suit">
+            <div class="header2Window attorney-header2Window">
+                <img src="./Assets/suit.jpg" alt="suit">
+            </div>
             <h1>Attorneys</h1>
             <div class="discription-container">
                 <p>We are a professional and passionate firm. Ready to tackle any legal cases thrown at us. We specialize in divorces and fraud, however have dealt with battery, negligence, …</p>
@@ -77,11 +79,18 @@
 
 <!-- Footer Menu -->
         <div class="footer">
-            <img src="./Assets/footer-city.jpg" alt="footer-img">
             <h1>Law Firm</h1>
-            <a href="#">Contacts</a>
-            <a href="#">Services</a>
-            <a href="#">Location</a>
+            <div class="footerLinks">
+                <li><a href="#">Attorneys</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Practice Area</a></li>
+                <li><a href="#">Location</a></li>
+            </div>
+            <div class="imgContainer">
+                <img src="./Assets/footer-city.jpg" alt="footer-img">
+            </div>
         </div>
+        <!-- <script src="./app.js"></script> -->
     </body>
 </html>

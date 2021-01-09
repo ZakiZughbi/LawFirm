@@ -9,7 +9,7 @@ nav {
   width: 100%;
 }
 nav a {
-  color: black;
+  color: #707070;
   text-decoration: none;
   font-family: "Lato", sans-serif;
 }
@@ -79,6 +79,20 @@ nav a {
   left: 18%;
   top: 470px;
   text-shadow: 1px 1px 5px black;
+}
+
+.header-container2 .header2Window {
+  position: relative;
+  height: 630px;
+}
+.header-container2 h1 {
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 80px;
+  font-family: "Lato", sans-serif;
+  position: absolute;
+  top: 40%;
 }
 
 .footer {
@@ -381,8 +395,30 @@ img {
   color: #e0e0da;
 }
 
-body {
-  background: blue;
+.discription-container {
+  background-color: #5A9FB5;
+  padding: 3%;
+  margin-top: -4px;
+}
+.discription-container p {
+  color: #F0F0ED;
+  font-size: 30px;
+  font-family: "Cormorant Garamond", serif;
+  padding: 0 3% 0;
+}
+
+.attorneys {
+  background-color: #F0F0ED;
+}
+.attorneys .attorney-box {
+  width: 25%;
+  background-color: #5A9FB5;
+}
+.attorneys .attorney-box h3 {
+  color: #F0F0ED;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  padding: 0 2% 2%;
 }
 
 /*# sourceMappingURL=styles.css.map */
