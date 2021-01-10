@@ -85,6 +85,12 @@ nav a {
   position: relative;
   height: 630px;
 }
+.header-container2 .header2Window img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 .header-container2 h1 {
   width: 100%;
   text-align: center;
@@ -93,6 +99,18 @@ nav a {
   font-family: "Lato", sans-serif;
   position: absolute;
   top: 40%;
+}
+
+.discription-container {
+  background-color: #5A9FB5;
+  padding: 2%;
+  margin-top: -4px;
+}
+.discription-container p {
+  color: #F0F0ED;
+  font-size: 23px;
+  font-family: "Cormorant Garamond", serif;
+  padding: 0 7% 0;
 }
 
 .footer {
@@ -395,30 +413,24 @@ img {
   color: #e0e0da;
 }
 
-.discription-container {
-  background-color: #5A9FB5;
-  padding: 3%;
-  margin-top: -4px;
-}
-.discription-container p {
-  color: #F0F0ED;
-  font-size: 30px;
-  font-family: "Cormorant Garamond", serif;
-  padding: 0 3% 0;
-}
-
-.attorneys {
+.attorneysBio {
   background-color: #F0F0ED;
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.attorneys .attorney-box {
+.attorneysBio .attorney-box {
   width: 25%;
   background-color: #5A9FB5;
+  margin: 0 1px 5%;
 }
-.attorneys .attorney-box h3 {
+.attorneysBio .attorney-box h3 {
   color: #F0F0ED;
   font-family: "Lato", sans-serif;
   font-size: 25px;
-  padding: 0 2% 2%;
+  text-align: center;
+  padding: 1% 2% 3%;
 }
 
 /*# sourceMappingURL=styles.css.map */
