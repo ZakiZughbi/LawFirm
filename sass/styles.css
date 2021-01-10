@@ -424,18 +424,12 @@ img {
   width: 25%;
   background-color: #5A9FB5;
   margin: 0 1px 5%;
+  align-items: center;
 }
 .attorneysBio .attorney-box .imgBox {
   width: 100%;
   height: 481px;
   overflow: hidden;
-}
-.attorneysBio .attorney-box .imgBox:hover img {
-  transform: scale(1.3);
-}
-.attorneysBio .attorney-box .imgBox img {
-  transform-origin: top;
-  transition: transform 5s ease-out;
 }
 .attorneysBio .attorney-box h3 {
   color: #F0F0ED;
