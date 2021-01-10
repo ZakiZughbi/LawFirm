@@ -150,13 +150,16 @@ img
 .attorneysBio
     background-color: $primeWhite
     padding: 5%
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
     .attorney-box
         width: 25%
         background-color: $primeBlue
         margin: 0 1px 5%
         .imgBox
             width: 100%
-            height: 481px
+            max-height: 481px
             overflow: hidden
             &:hover img
                 transform: scale(1.3)

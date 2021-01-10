@@ -416,21 +416,18 @@ img {
 .attorneysBio {
   background-color: #F0F0ED;
   padding: 5%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .attorneysBio .attorney-box {
   width: 25%;
   background-color: #5A9FB5;
   margin: 0 1px 5%;
-<<<<<<< HEAD
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-=======
->>>>>>> parent of bc0eb89 (attempt to reslove box vertical stretch bug)
 }
 .attorneysBio .attorney-box .imgBox {
   width: 100%;
-  height: 481px;
+  max-height: 481px;
   overflow: hidden;
 }
 .attorneysBio .attorney-box .imgBox:hover img {
