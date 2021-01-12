@@ -6,7 +6,7 @@ window.onscroll = function(){headerImgDisapear();};
 
 // Image Appear & Disapear Function
 function headerImgDisapear(){
-    if(document.body.scrollTop > 2500 || document.documentElement.scrollTop > 1500){
+    if(document.body.scrollTop > 2000 || document.documentElement.scrollTop > 1000){
         headerImg.style.display='none';
     }else{
         headerImg.style.display='block';

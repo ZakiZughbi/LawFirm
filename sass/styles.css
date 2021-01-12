@@ -451,18 +451,23 @@ img {
 .services-container .service-box {
   padding: 6%;
   background-color: #F0F0ED;
-  color: #5A9FB5;
   font-size: 23px;
   text-align: center;
   font-family: "Lato", sans-serif;
+  margin-bottom: -95px;
+  transition: background-color 5s;
 }
 .services-container .service-box h2 {
   font-size: 40px;
-  padding-bottom: 0;
+  padding-bottom: 4%;
   font-weight: bold;
+  color: #5A9FB5;
+  transition: color 4s;
 }
 .services-container .service-box p {
-  display: none;
+  opacity: 0;
+  transition: opacity 5s;
+  color: #F0F0ED;
 }
 .services-container .bottomBorder {
   width: 90%;
@@ -470,6 +475,15 @@ img {
   background-color: #5A9FB5;
   position: relative;
   left: 5%;
+}
+
+@keyframes open {
+  0% {
+    margin-bottom: -95px;
+  }
+  100% {
+    margin-bottom: 0px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
