@@ -3,6 +3,8 @@
 @import './nav'
 @import './header'
 @import './footer'
+@import './animations'
+@import 'mixins'
 
 // Clearing Page
 *
@@ -195,16 +197,16 @@ img
             opacity: 0
             transition: opacity 5s
             color: $primeWhite
+    .borderContainer
+        display: flex
+        width: 100%
+        justify-content: center
+        .bottomBorder
+            width: 83%
+            height: 2px
+            background-color: $primeBlue
 
-    .bottomBorder
-        width: 90%
-        height: 2px
-        background-color: $primeBlue
-        position: relative
-        left: 5%
-
-@keyframes open
-    0%
-        margin-bottom: -95px
-    100%
-        margin-bottom: 0px
+    .aboveFooterSpace
+        height: 95px
+        width: 100%
+        transition: height 3s
