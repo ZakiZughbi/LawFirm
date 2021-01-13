@@ -175,7 +175,7 @@ img
             text-align: center
             padding: 1% 2% 3%
 
-// Services
+// Services Page
 
 .services-container
     background-color: $primeWhite
@@ -210,3 +210,39 @@ img
         height: 95px
         width: 100%
         transition: height 3s
+
+// Practice Area Page
+
+.practices-container
+    background-color: $primeWhite
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    padding: 3% 2% 3%
+    .practiceBox
+        width: 250px
+        height: 250px
+        margin: 1%
+        background-color: $primeBlue
+        text-align: center
+        color: $primeWhite
+        font-family: $modFont
+        position: relative
+        &:nth-child(even)
+            background-color: $primeWhite
+            border: 3px solid $primeBlue
+            color: $primeBlue
+            a
+                @include btn($primeWhite)
+        p
+            font-size: $pSize
+            display: flex
+            width: 100%
+            justify-content: center
+            position: absolute
+            top: 30%
+        a
+            position: absolute
+            bottom: 22%
+            left: 25%
+            @include btn($primeBlue)

@@ -510,4 +510,64 @@ img {
   transition: height 3s;
 }
 
+.practices-container {
+  background-color: #F0F0ED;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3% 2% 3%;
+}
+.practices-container .practiceBox {
+  width: 250px;
+  height: 250px;
+  margin: 1%;
+  background-color: #5A9FB5;
+  text-align: center;
+  color: #F0F0ED;
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+.practices-container .practiceBox:nth-child(even) {
+  background-color: #F0F0ED;
+  border: 3px solid #5A9FB5;
+  color: #5A9FB5;
+}
+.practices-container .practiceBox:nth-child(even) a {
+  border: 2px solid #5A9FB5;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  color: #5A9FB5;
+  text-decoration: none;
+  padding: 1.3% 6% 1.3%;
+  transition: color, background-color 0.5s;
+}
+.practices-container .practiceBox:nth-child(even) a:hover {
+  background-color: #e0e0da;
+  color: #498da2;
+}
+.practices-container .practiceBox p {
+  font-size: 30px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  top: 30%;
+}
+.practices-container .practiceBox a {
+  position: absolute;
+  bottom: 22%;
+  left: 25%;
+  border: 2px solid #F0F0ED;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  color: #F0F0ED;
+  text-decoration: none;
+  padding: 1.3% 6% 1.3%;
+  transition: color, background-color 0.5s;
+}
+.practices-container .practiceBox a:hover {
+  background-color: #498da2;
+  color: #e0e0da;
+}
+
 /*# sourceMappingURL=styles.css.map */
