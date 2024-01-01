@@ -1,0 +1,263 @@
+// File Imports
+@import './variables'
+@import './nav'
+@import './header'
+@import './footer'
+@import './animations'
+@import 'mixins'
+
+// Clearing Page
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+// All images
+img
+    width: 100%
+
+// Home Page Content
+.phone-number
+    background-color: $primeBlue
+    color: $primeWhite
+    margin-top: -4px
+    padding: 1%
+    text-align: center
+    h2
+        display: inline
+        font-family: $modFont
+        font-weight: 400
+        font-size: 30px
+        &:nth-child(2)
+            margin-left: 5%
+
+// About
+.about
+    @include section($primeWhite)
+
+// Practice Area
+.practice
+    @include section($primeWhite)
+    div
+        margin-bottom: 10%
+
+// Slogan Window
+.window
+    width: 100%
+    height: 550px
+    position: relative
+    h2
+        position: absolute
+        font-size: 60px
+        font-family: $classFont
+        color: $primeBlue
+        top: 47%
+        left: 24%
+    img
+        position: fixed
+        top: 0
+        left: 0
+        z-index: -1
+
+// Attorneys
+.attorneys
+    @include section($primeBlue)
+    div
+        margin-bottom: 6%
+
+// Location
+.location
+    background-color: $primeWhite
+    color: $primeBlue
+    padding: 3%
+    p
+        font-family: $modFont
+        margin-left: 5%
+        font-size: 60px
+        &:nth-child(2)
+            font-size: 20px
+            font-family: $classFont
+            text-align: left
+            padding: 10px
+            margin-left: 4.5%
+            width: 40%
+    iframe
+        margin: 3% 0 0 5%
+
+// Contacts
+.contacts
+    background-color: $primeBlue
+    padding: 3%
+    color: $primeWhite
+    position: relative
+    height: 730px
+    p
+        font-family: $modFont
+        margin: 0 0 6% 5%
+        font-size: 60px
+    .contactstxt
+        font-family: $modFont
+        p
+            font-size: 30px
+            color: $primeWhite
+            margin: 0 0 6% 5%
+            &:nth-child(2)
+                width: 23%
+                font-size: 20px
+                font-family: $classFont
+
+    .form-container
+        position: absolute
+        top: 170px
+        left: 61%
+        ::placeholder
+            color: $primeGray
+        input
+            font-size: 20px
+            display: block
+            width: 76%
+            margin: 20px
+            padding: 7px
+            border: none
+        textarea
+            font-size: 20px
+            font-family: 'Helvetica'
+            display: block
+            width: 76%
+            margin: 20px
+            padding: 7px
+            border: none
+        button
+            border: 2px solid $primeWhite
+            font-size: 15px
+            font-family: $modFont
+            color: $primeWhite
+            background-color: $primeBlue
+            padding: 7px 25px 7px
+            position: absolute
+            right: 110px
+            transition: color, background-color 0.4s
+            &:hover
+                background-color: darken($primeBlue, 7)
+                color: darken($primeWhite, 7)
+
+    a
+        @include btn($primeBlue)
+        position: absolute
+        left: 40%
+        bottom: 80px
+
+// Attorneys Page
+
+.attorneysBio
+    background-color: $primeWhite
+    padding: 5%
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    .attorney-box
+        width: 25%
+        background-color: $primeBlue
+        margin: 0 1px 5%
+        .imgBox
+            width: 100%
+            max-height: 481px
+            overflow: hidden
+            &:hover img
+                transform: scale(1.3)
+            img
+                transform-origin: top
+                transition: transform 5s ease-out
+        h3
+            color: $primeWhite
+            font-family: $modFont
+            font-size: 25px
+            text-align: center
+            padding: 1% 2% 3%
+
+// Services Page
+
+.services-container
+    background-color: $primeWhite
+    .service-box
+        padding: 6%
+        background-color: $primeWhite
+        font-size: 23px
+        text-align: center
+        font-family: $modFont
+        margin-bottom: -95px
+        transition: background-color 5s
+        h2
+            font-size: 40px
+            padding-bottom: 4%
+            font-weight: bold
+            color: $primeBlue
+            transition: color 4s
+        p
+            opacity: 0
+            transition: opacity 5s
+            color: $primeWhite
+    .borderContainer
+        display: flex
+        width: 100%
+        justify-content: center
+        .bottomBorder
+            width: 83%
+            height: 2px
+            background-color: $primeBlue
+
+    .aboveFooterSpace
+        height: 95px
+        width: 100%
+        transition: height 3s
+
+// Practice Area Page
+
+.practices-container
+    background-color: $primeWhite
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    padding: 3% 2% 3%
+
+    .practiceBox
+        width: 250px
+        height: 250px
+        margin: 1%
+        background-color: $primeBlue
+        text-align: center
+        color: $primeWhite
+        font-family: $modFont
+        position: relative
+        &:nth-child(even)
+            background-color: $primeWhite
+            border: 3px solid $primeBlue
+            color: $primeBlue
+            a
+                @include btn($primeWhite)
+        p
+            font-size: $pSize
+            display: flex
+            width: 100%
+            justify-content: center
+            position: absolute
+            top: 30%
+        a
+            position: absolute
+            bottom: 22%
+            left: 25%
+            @include btn($primeBlue)
+        .expand
+            position: fixed
+            z-index: 10
+            height: 10px
+            width: 100%
+            background: orange
+            top: 0
+            left: 0
+            p
+                display: none
+            h2
+                display: none
+            .x
+                display: none

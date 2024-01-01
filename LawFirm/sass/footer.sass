@@ -1,0 +1,49 @@
+
+.footer
+    width: 100%
+    height: 700px
+    position: relative
+    .imgContainer
+        position: fixed
+        color: black
+        bottom: -4px
+        z-index: -2
+    h1
+        position: absolute
+        font-size: 80px
+        font-family: $modFont
+        color: $primeWhite
+        top: 20%
+        left: 5%
+    .footerLinks
+        display: flex
+        justify-content: space-evenly
+        position: absolute
+        bottom: 50px
+        width: 100%
+        li
+            display: table-cell
+            position: relative
+            padding: 15px
+            a
+                text-decoration: none
+                color: $primeWhite
+                font-size: 35px
+                font-family: $modFont
+                transition: color 0.3s linear
+                &:hover
+                    color: $primeGray
+                &:after
+                    background: none repeat scroll 0 0 transparent
+                    bottom: 0
+                    content: ""
+                    display: block
+                    height: 2px
+                    left: 50%
+                    position: absolute
+                    background: $primeGray
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s
+                    width: 0
+                &:hover:after
+                    width: 100%
+                    left: 0

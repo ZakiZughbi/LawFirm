@@ -1,0 +1,67 @@
+// All headers img for every page allowing positions of page title
+.header
+    img
+        position: relative
+
+.header-container1
+    h1
+        font-size: 90px
+        font-family: $classFont
+        color: $prueWhite
+        z-index: 1
+        display: flex
+        justify-content: center
+        position: absolute
+        left: 25%
+        top: 310px
+        text-shadow: 1px 1px 5px #707070
+        &:nth-child(2)
+            color: $primeBlue
+            top: 200px
+            left: 28%
+            text-shadow: none
+    h2
+        font-size: 75px
+        font-family: $classFont
+        font-weight: 500
+        color: $prueWhite
+        position: absolute
+        z-index: 1
+        left: 18%
+        top: 470px
+        text-shadow: 1px 1px 5px black
+
+.header-container2
+    .header2Window
+        position: relative
+        height: 630px
+        img
+            position: fixed
+            top: 0
+            left: 0
+            z-index: -1
+    h1
+        width: 100%
+        text-align: center
+        color: $prueWhite
+        font-size: 80px
+        font-family: $modFont
+        position: absolute
+        top: 40%
+
+.discription-container
+    background-color: $primeBlue
+    padding: 2%
+    margin-top: -4px
+    p
+        color: $primeWhite
+        font-size: 23px
+        font-family: $classFont
+        padding: 0 7% 0
+        text-align: center
+
+// Extra for Services Pages
+.bottomBorder
+    height: 2px
+    width: 100%
+    background-color: $primeWhite
